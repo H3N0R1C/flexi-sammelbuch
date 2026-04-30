@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexi Detail</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a href="index.html" class="back-btn">⬅ Zurück zum Sammelbuch</a>
+
+<div id="detail-container">
+
+    <h1 id="pet-title"></h1>
+
+    <div id="detail-card">
+
+        <!-- Linke Seite: 3D Modell -->
+        <div id="model-box">
+            <model-viewer id="pet-model" auto-rotate camera-controls></model-viewer>
+        </div>
+
+        <!-- Rechte Seite: Infos -->
+        <div id="info-box">
+            <div class="info-row">
+                <span class="info-label">Name:</span>
+                <span id="pet-name"></span>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">Seltenheit:</span>
+                <span id="pet-rarity"></span>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">Ei / Event:</span>
+                <span id="pet-source"></span>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">Jahr:</span>
+                <span id="pet-year"></span>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">Gesammelt:</span>
+                <span id="pet-count"></span>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">Erstes Mal erhalten:</span>
+                <span id="pet-first"></span>
+            </div>
+
+            <div class="info-description">
+                <h3>Beschreibung</h3>
+                <p id="pet-description"></p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<header>
+</header>
+
+<button id="theme-toggle" class="theme-toggle">🌙 Dark Mode</button>
+
+<main>
+</main>
+
+<div id="viewer-container">
+    <model-viewer src="${flexi.model}" auto-rotate camera-controls></model-viewer>
+</div>
+
+<script src="detail.js"></script>
+
+</body>
+</html>
